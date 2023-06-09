@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 app.use('/', (req, res, next) => {
-  res.setHeader('x-sourcemap-url', 'https://gauthammariyappan.github.io/coursera-test/module5-solution/case1.js.map');
+  res.setHeader('x-sourcemap-url', 'https://gauthammariyappan.github.io/coursera-test/module5-solution/case2/case2.min.js.map');
   next();
 }, express.static('public'));
 
