@@ -3,19 +3,28 @@
 <head>
   <title>My Front-End Application</title>
   <script src="./js/case2.min.js"></script>
-  <!-- <script src="./js/rum-script.js"></script> -->
   <script type="text/javascript">
 	
-    (function(w,d,s,r,k,h,m){
-    	if(w.performance && w.performance.timing && w.performance.navigation) {
-    		w[r] = w[r] || function(){(w[r].q = w[r].q || []).push(arguments)};
-    		h=d.createElement('script');h.async=true;h.setAttribute('src',s+k);
-    		d.getElementsByTagName('head')[0].appendChild(h);
-    		(m = window.onerror),(window.onerror = function (b, c, d, f, g) {
-    		m && m(b, c, d, f, g),g || (g = new Error(b)),(w[r].q = w[r].q || []).push(["captureException",g]);})
-    	}
-    })(window,document,'https://col.localsite24x7.com/rum/resources/beacon/site24x7rum-min.js?appKey=','s247r','fb6b0ba6156056a24352775d60a66e3f');
-
+//     (function(w,d,s,r,k,h,m){
+//     	if(w.performance && w.performance.timing && w.performance.navigation) {
+//     		w[r] = w[r] || function(){(w[r].q = w[r].q || []).push(arguments)};
+//     		h=d.createElement('script');h.async=true;h.setAttribute('src',s+k);
+//     		d.getElementsByTagName('head')[0].appendChild(h);
+//     		(m = window.onerror),(window.onerror = function (b, c, d, f, g) {
+//     		m && m(b, c, d, f, g),g || (g = new Error(b)),(w[r].q = w[r].q || []).push(["captureException",g]);})
+//     	}
+//     })(window,document,'https://col.localsite24x7.com/rum/resources/beacon/site24x7rum-min.js?appKey=','s247r','fb6b0ba6156056a24352775d60a66e3f');
+	  
+(function(w,d,s,r,k,h,m){
+	if(w.performance && w.performance.timing && w.performance.navigation) {
+		w[r] = w[r] || function(){(w[r].q = w[r].q || []).push(arguments)};
+		h=d.createElement('script');h.async=true;h.setAttribute('src',s+k);
+		d.getElementsByTagName('head')[0].appendChild(h);
+		(m = window.onerror),(window.onerror = function (b, c, d, f, g) {
+		m && m(b, c, d, f, g),g || (g = new Error(b)),(w[r].q = w[r].q || []).push(["captureException",g]);})
+	}
+})(window,document,'//static.site24x7rum.com/beacon/site24x7rum-min.js?appKey=','s247r','fa4c011b8de19d1ee8e8138ca3047723');
+	  
   </script>
 </head>
 <body>
